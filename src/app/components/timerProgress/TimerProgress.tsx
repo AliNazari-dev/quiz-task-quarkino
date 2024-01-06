@@ -24,7 +24,7 @@ export default function TimerProgress({ onTimeout, time, setTime }: TimerProps) 
   const progress = (time / 100) * 100;
 
   return (
-    <div className='w-[300px] bg-green-700 h-3 rounded-lg mb-8'>
+    <div className='timer-progress w-[300px] bg-green-700 h-3 rounded-lg mb-8'>
       <div
         className='bg-red-600 h-3 rounded-lg transition-all'
         style={{ width: `${progress * 20}%` }}></div>

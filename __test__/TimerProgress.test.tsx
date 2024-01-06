@@ -6,6 +6,7 @@ import TimerProgress from "../src/app/components/timerProgress/TimerProgress";
 jest.useFakeTimers();
 
 describe("TimerProgress", () => {
+  const wrapperClassName = "timer-progress";
   // it("increments time and calls onTimeout when time reaches 5 seconds", async () => {
   //   const onTimeoutMock = jest.fn();
   //   const setTimeMock = jest.fn();
@@ -58,6 +59,16 @@ describe("TimerProgress", () => {
   //   // Ensure clearInterval is called
   //   expect(clearInterval).toHaveBeenCalled();
   // });
+  it("render correctly wrapper", () => {
+    const onTimeoutMock = jest.fn();
+    const setTimeMock = jest.fn();
+
+    const { container } = render(
+      <TimerProgress onTimeout={onTimeoutMock} time={2} setTime={setTimeMock} />
+    );
+
+    expect(container.firstChild).toHaveClass(wrapperClassName);
+  });
 
   it("match snapshot", () => {
     const onTimeoutMock = jest.fn();
