@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimerProgress match snapshot 1`] = `
+<div>
+  <div
+    class="w-[300px] bg-green-700 h-3 rounded-lg mb-8"
+  >
+    <div
+      class="bg-red-600 h-3 rounded-lg transition-all"
+      style="width: 40%;"
+    />
+    <div
+      class="text-center mt-2 font-bold"
+    >
+      lost time : 
+      2
+       s
+    </div>
+  </div>
+</div>
+`;
