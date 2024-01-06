@@ -15,6 +15,11 @@ challang :
 what we can do in futur 
 1 -  The design should be modeled as a Modal and can be used in other applications 
 2 -  using AI Api for generating question
-3 -  
+3 -  when user clicked on wrong anwer the bgColor should be red and the correct answer should be green
+4 - adding State-managment like useReducer or zustand for managing State
+
+
+
+
 
 i used typescript - nextjs and tailwind 

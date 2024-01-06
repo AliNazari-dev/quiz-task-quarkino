@@ -1,3 +1,5 @@
+import { correctAnswerBg } from "@/app/utils/helper";
+
 type AnswersProps = {
   idx: number;
   answer: string;
@@ -11,6 +13,7 @@ export default function Answers({
   onAnswerSelected,
   selectedAnswerIndex,
   idx,
+  correctAnswer,
 }: AnswersProps) {
   return (
     <li

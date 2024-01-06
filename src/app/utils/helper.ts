@@ -15,3 +15,8 @@ export const getBGColor = (
 
   return "bg-white text-[#9F50AC]";
 };
+
+export const correctAnswerBg = (correctAnswer: string, userAnswer: string) => {
+  const bgAnswer = correctAnswer === userAnswer ? true : false;
+  return bgAnswer;
+};
