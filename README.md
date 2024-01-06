@@ -17,9 +17,7 @@ what we can do in futur
 2 -  using AI Api for generating question
 3 -  when user clicked on wrong anwer the bgColor should be red and the correct answer should be green
 4 - adding State-managment like useReducer or zustand for managing State
-
-
-
+5 -writing test and fixing bug with using next and latest version of jest by refactor to version 5.0.0 jest not latest
 
 
 i used typescript - nextjs and tailwind 
